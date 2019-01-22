@@ -5,7 +5,7 @@ class AttractionsController < ApplicationController
   end 
   
   def edit
-    @atrraction = Attraction.find(params[:id])
+    @attraction = Attraction.find(params[:id])
   end
   
   def index 
