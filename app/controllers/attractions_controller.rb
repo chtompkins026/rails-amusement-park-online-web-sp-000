@@ -4,6 +4,10 @@ class AttractionsController < ApplicationController
     @attraction = Attraction.new 
   end 
   
+  def edit
+    @atrraction = Attraction.find(params[:id])
+  end
+  
   def index 
     @attractions = Attraction.all 
     @user = current_user 
